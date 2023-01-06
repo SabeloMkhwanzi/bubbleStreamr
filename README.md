@@ -12,7 +12,7 @@
     <a href="https://github.com/SabeloMkhwanzi/bubbleStreamr/edit/main/README.md"><b>Documentation</b></a>
 </p> 
 
-# EddAlytics - Evmos Dex Dashboard Analytics
+# BubbleStreamr - A decentralized live streaming platform 
 
 Engaging with your audience in real time — we’re talking live streams. we offer you a platform to host and stream your content and everything you need to monetization brand it. 
 
