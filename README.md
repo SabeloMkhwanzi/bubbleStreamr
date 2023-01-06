@@ -2,7 +2,7 @@
 
 <h1 align="center">
    <b>
-        <a href="https://"><img src="https://github.com/SabeloMkhwanzi/evmos-defi-dashlytics/blob/main/public/eddalytics-logo4.png" /></a><br>
+        <a href="https://"><img src="https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/bubblestreamr-logo2.png" /></a><br>
     </b>
 </h1>
 
