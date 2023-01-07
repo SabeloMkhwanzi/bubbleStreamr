@@ -135,7 +135,7 @@ export default function HeroPage() {
           <Text size="lg" className={classes.description}>
             Engaging with your audience in real time — we’re talking live
             streams. we offer you a platform to host and stream your content and
-            everything you need to monetization brand it.
+            everything you need to monetization niche.
           </Text>
         </Container>
 

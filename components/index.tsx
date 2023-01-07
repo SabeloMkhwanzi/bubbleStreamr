@@ -6,3 +6,8 @@ export { default as HeroPage } from "./HeroPage";
 export { default as HeroVideo } from "./HeroVideo";
 export { default as Footer } from "./Footer";
 export { default as ProjectLogo } from "./ProjectLogo";
+export { default as VideoUploader } from "./VideoUploader";
+export { default as VideoMinter } from "./VideoMinter";
+export { default as JoinStream } from "./JoinStream";
+export { default as CreateStream } from "./CreateSteam";
+export { default as HeaderTitle } from "./HeaderTitle";

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Footer, NavbarHeader } from "../components";
+import { CreateStream, Footer, NavbarHeader } from "../components";
 import { AppShell, ScrollArea } from "@mantine/core";
 
 //import { Inter } from "@next/font/google";
@@ -28,7 +28,9 @@ export default function createStream() {
           },
         })}
       >
-        <ScrollArea style={{ height: "100%" }}></ScrollArea>
+        <ScrollArea style={{ height: "100%" }}>
+          <CreateStream />
+        </ScrollArea>
       </AppShell>
     </>
   );

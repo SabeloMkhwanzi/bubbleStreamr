@@ -3,7 +3,7 @@ import { Container, createStyles } from "@mantine/core";
 import Image from "next/image";
 
 const playbackId =
-  "bafybeida3w2w7fch2fy6rfvfttqamlcyxgd3ddbf4u25n7fxzvyvcaegxy";
+  "bafybeickrmzg5hsvokjjsev5chfwksfsh7yckzggdtzkvfh6rnejm3dfua";
 
 //import blenderPoster from "../../public/images/blender-poster.png";
 
@@ -23,11 +23,11 @@ const useStyles = createStyles((theme) => ({
 export default function HeroVideo() {
   const { classes } = useStyles();
   return (
-    <Container size="xl" px={10} my="5em" className={classes.Paper}>
+    <Container size="xl" px={8} my="5em" className={classes.Paper}>
       <Player
         autoPlay
         loop
-        title="Waterfalls"
+        title="BubbleStreaamr Ad"
         playbackId={playbackId}
         showPipButton
         showTitle={false}

@@ -66,24 +66,24 @@ export default function NavbarHeader() {
   const [opened, { toggle }] = useDisclosure(false);
 
   return (
-    <Header height={HEADER_HEIGHT} sx={{ borderBottom: 0 }} mb={120}>
+    <Header mx="17em" height={HEADER_HEIGHT} sx={{ borderBottom: 0 }} mb={120}>
       <Container className={classes.inner} fluid>
         <Group>
-          <Burger
+          {/* <Burger
             opened={opened}
             onClick={toggle}
             className={classes.burger}
             size="sm"
-          />
+          /> */}
           <ProjectLogo />
         </Group>
         <Group spacing={5} className={classes.links}>
           <Link
             style={{ color: "inherit", textDecoration: "inherit" }}
-            href="/explore"
+            href="/"
           >
             <Button variant="default" radius="md" className={classes.linkLabel}>
-              Explore
+              Home
             </Button>
           </Link>
           <Link
@@ -91,7 +91,7 @@ export default function NavbarHeader() {
             href="/publish"
           >
             <Button variant="default" radius="md" className={classes.linkLabel}>
-              Publish
+              Upload Video
             </Button>
           </Link>
           <Link
@@ -117,6 +117,7 @@ export default function NavbarHeader() {
             <ColorModeButton />
           </div>
           <Button
+            className={classes.links}
             rightIcon={<IconPlayerPlay size={20} color="black" stroke={5} />}
             styles={(theme) => ({
               root: {

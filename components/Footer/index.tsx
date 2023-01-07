@@ -45,15 +45,15 @@ export default function Footer() {
         <Group className={classes.links}>
           <Link
             style={{ color: "inherit", textDecoration: "inherit" }}
-            href="/explore"
+            href="/"
           >
-            <Text transform="none">Explore</Text>
+            <Text transform="none">Home</Text>
           </Link>
           <Link
             style={{ color: "inherit", textDecoration: "inherit" }}
             href="/publish"
           >
-            <Text>Publish</Text>
+            <Text>Upload Video</Text>
           </Link>
           <Link
             style={{ color: "inherit", textDecoration: "inherit" }}
