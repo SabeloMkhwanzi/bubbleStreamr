@@ -29,6 +29,10 @@ import { showNotification, updateNotification } from "@mantine/notifications";
 import HeaderTitle from "../HeaderTitle";
 import PushChat from "../PushChat";
 
+import { Petrona } from "@next/font/google";
+
+const petrona = Petrona({ weight: "variable" });
+
 const useStyles = createStyles((theme) => ({
   item: {
     borderRadius: theme.radius.md,
@@ -132,6 +136,8 @@ export default function CreateStream() {
       <Center>
         <Box>
           <Text
+            fz="xl"
+            className={petrona.className}
             hidden={
               stream?.playbackId && (
                 <Player
@@ -207,7 +213,14 @@ export default function CreateStream() {
                 disabled={isLoading || !createStream}
                 variant="primary"
               >
-                Create Stream
+                <Text
+                  className={petrona.className}
+                  fw={700}
+                  fz="xl"
+                  color="black"
+                >
+                  Create Stream
+                </Text>
               </Button>
             )}
           </Flex>
@@ -217,6 +230,10 @@ export default function CreateStream() {
                 <Group>
                   <Box mt={6}>
                     <Button
+                      fw={700}
+                      fz="xl"
+                      color="black"
+                      className={petrona.className}
                       styles={(theme) => ({
                         root: {
                           backgroundColor: "#FF0057",
@@ -258,7 +275,11 @@ export default function CreateStream() {
                         }, 3000);
                       }}
                     >
-                      <Text fw={700} color="black">
+                      <Text
+                        className={petrona.className}
+                        fw={700}
+                        color="black"
+                      >
                         Push Notification
                       </Text>
                     </Button>
@@ -271,15 +292,17 @@ export default function CreateStream() {
                           styles={(theme) => ({
                             marginBottom: theme.spacing.sm * 1.5,
                           })}
-                          fw={500}
+                          fw={700}
                           ta="right"
                           color="white"
+                          className={petrona.className}
+                          fz="xl"
                         >
                           · {stream.name}
                         </Text>
                       </Box>
                       <Box mx={10}>
-                        <Text>
+                        <Text ta="right" className={petrona.className}>
                           {moment(stream.createdAt).format(
                             "MMMM Do YYYY, h:mm:ss a"
                           )}
@@ -299,11 +322,19 @@ export default function CreateStream() {
                     value="reset-password"
                   >
                     <Accordion.Control>
-                      Useful information for your
+                      <Text
+                        fw={500}
+                        tt="uppercase"
+                        className={petrona.className}
+                      >
+                        Useful information for your *
+                      </Text>
                     </Accordion.Control>
                     <Accordion.Panel>
                       <Group>
-                        <Text fw={500}>Stream Key:</Text>
+                        <Text className={petrona.className} fw={500}>
+                          Stream Key:
+                        </Text>
                         <Text>{stream.streamKey}</Text>
                         <CopyButton value={stream.streamKey} timeout={2000}>
                           {({ copied, copy }) => (
@@ -327,7 +358,9 @@ export default function CreateStream() {
                         </CopyButton>
                       </Group>
                       <Group>
-                        <Text fw={500}>Playback Id:</Text>
+                        <Text className={petrona.className} fw={500}>
+                          Playback Id:
+                        </Text>
                         <Text>{stream.playbackId}</Text>
                         <CopyButton value={stream.playbackId} timeout={2000}>
                           {({ copied, copy }) => (
@@ -351,7 +384,9 @@ export default function CreateStream() {
                         </CopyButton>
                       </Group>
                       <Group>
-                        <Text fw={500}>RTMP ingest URL: </Text>
+                        <Text className={petrona.className} fw={500}>
+                          RTMP ingest URL:{" "}
+                        </Text>
                         <Text>{getEllipsisTxt(stream.rtmpIngestUrl)}</Text>
                         <CopyButton value={stream.rtmpIngestUrl} timeout={2000}>
                           {({ copied, copy }) => (
@@ -375,7 +410,9 @@ export default function CreateStream() {
                         </CopyButton>
                       </Group>
                       <Group>
-                        <Text fw={500}>Stream ID:</Text>
+                        <Text className={petrona.className} fw={500}>
+                          Stream ID:
+                        </Text>
                         <Text>{stream.id}</Text>
                         <CopyButton value={stream.id} timeout={2000}>
                           {({ copied, copy }) => (
@@ -399,7 +436,9 @@ export default function CreateStream() {
                         </CopyButton>
                       </Group>
                       <Group>
-                        <Text fw={500}>Playback URL: </Text>
+                        <Text className={petrona.className} fw={500}>
+                          Playback URL:
+                        </Text>
                         <Text>{getEllipsisTxt(stream.playbackUrl)}</Text>
                         <CopyButton value={stream.playbackUrl} timeout={2000}>
                           {({ copied, copy }) => (

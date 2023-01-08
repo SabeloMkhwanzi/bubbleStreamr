@@ -1,6 +1,9 @@
 import React from "react";
 import { IconPlayerPlay } from "@tabler/icons";
-import { Button } from "@mantine/core";
+import { Button, Text } from "@mantine/core";
+import { Petrona } from "@next/font/google";
+
+const petrona = Petrona({ weight: "500" });
 
 export class JoinStreamButton extends React.Component {
   constructor(props) {
@@ -72,13 +75,18 @@ export class JoinStreamButton extends React.Component {
             onClick={() => {
               this.checkout();
             }}
-            className="mb-4 inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           >
-            Subscribe
+            <Text fw={700} fz="xl" color="black" className={petrona.className}>
+              Subscribe
+            </Text>
           </Button>
         )}
         {locked === "unlocked" && (
           <Button
+            fw={700}
+            fz="xl"
+            color="black"
+            className={petrona.className}
             rightIcon={<IconPlayerPlay size={20} color="black" stroke={5} />}
             styles={(theme) => ({
               root: {
@@ -99,9 +107,10 @@ export class JoinStreamButton extends React.Component {
             onClick={() => {
               this.props.renderPlayer(true);
             }}
-            className="mb-4 inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           >
-            Watch Stream
+            <Text fw={700} fz="xl" color="black" className={petrona.className}>
+              Watch Stream
+            </Text>
           </Button>
         )}
       </div>

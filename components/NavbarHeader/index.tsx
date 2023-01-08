@@ -4,17 +4,19 @@ import {
   Container,
   Group,
   Button,
-  Burger,
+  Text,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { IconPlayerPlay } from "@tabler/icons";
 import Link from "next/link";
 import ColorModeButton from "../ColorModeButton";
 import ConnectWallet from "../ConnectWallet";
 import ProjectLogo from "../ProjectLogo";
 import PushNotifiction from "../PushNotifiction";
+import { Petrona } from "@next/font/google";
 
-const HEADER_HEIGHT = 80;
+const petrona = Petrona({ weight: "500" });
+
+const HEADER_HEIGHT = 90;
 
 const useStyles = createStyles((theme) => ({
   inner: {
@@ -68,15 +70,14 @@ export default function NavbarHeader() {
   const [opened, { toggle }] = useDisclosure(false);
 
   return (
-    <Header mx="5em" height={HEADER_HEIGHT} sx={{ borderBottom: 0 }} mb={120}>
+    <Header
+      bg="transparent"
+      height={HEADER_HEIGHT}
+      sx={{ borderBottom: 0 }}
+      mb={120}
+    >
       <Container className={classes.inner} fluid>
         <Group>
-          {/* <Burger
-            opened={opened}
-            onClick={toggle}
-            className={classes.burger}
-            size="sm"
-          /> */}
           <ProjectLogo />
         </Group>
         <Group spacing={5} className={classes.links}>
@@ -85,7 +86,7 @@ export default function NavbarHeader() {
             href="/"
           >
             <Button variant="default" radius="md" className={classes.linkLabel}>
-              Home
+              <Text className={petrona.className}> Home</Text>
             </Button>
           </Link>
 
@@ -94,7 +95,7 @@ export default function NavbarHeader() {
             href="/createStream"
           >
             <Button variant="default" radius="md" className={classes.linkLabel}>
-              Create Stream
+              <Text className={petrona.className}> Create Stream</Text>
             </Button>
           </Link>
           <Link
@@ -102,17 +103,9 @@ export default function NavbarHeader() {
             href="/joinStream"
           >
             <Button variant="default" radius="md" className={classes.linkLabel}>
-              Join Stream
+              <Text className={petrona.className}>Join Stream</Text>
             </Button>
           </Link>
-          {/* <Link
-            style={{ color: "inherit", textDecoration: "inherit" }}
-            href="/publish"
-          >
-            <Button variant="default" radius="md" className={classes.linkLabel}>
-              Upload Video
-            </Button>
-          </Link> */}
         </Group>
 
         <Group className={classes.linkLabel}>
@@ -126,5 +119,3 @@ export default function NavbarHeader() {
     </Header>
   );
 }
-
-//color = "#00eb88";

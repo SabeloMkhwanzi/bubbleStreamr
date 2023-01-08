@@ -1,5 +1,5 @@
 import { NotificationItem } from "@pushprotocol/uiweb";
-import { Popover, Button, ScrollArea, Menu } from "@mantine/core";
+import { Indicator, Button, ScrollArea, Menu } from "@mantine/core";
 import { BellIcon } from "@chakra-ui/icons";
 import { showNotification, updateNotification } from "@mantine/notifications";
 import { IconCheck } from "@tabler/icons";
@@ -9,14 +9,16 @@ export default function NotificationItems({ notifications, OptInChannel }) {
     <div>
       <Menu width={600} position="bottom" withArrow shadow="md">
         <Menu.Target>
-          <BellIcon
-            color="#FF0057"
-            aria-label="BellIcon database"
-            boxSize="40"
-            mx="5"
-            my="5"
-            id="sdk-trigger-id"
-          />
+          <Indicator offset={7} color="green.8" label="New" size={16}>
+            <BellIcon
+              color="#FF0057"
+              aria-label="BellIcon database"
+              boxSize="40"
+              mx="5"
+              my="5"
+              id="sdk-trigger-id"
+            />
+          </Indicator>
         </Menu.Target>
         <Menu.Dropdown>
           <center>

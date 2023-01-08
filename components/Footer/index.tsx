@@ -5,7 +5,10 @@ import {
   IconBrandLinkedin,
   IconBrandGithub,
 } from "@tabler/icons";
-import ProjectLogo from "../ProjectLogo";
+import { Petrona } from "@next/font/google";
+import { Center } from "@mantine/core";
+
+const petrona = Petrona({ weight: "500" });
 
 const useStyles = createStyles((theme) => ({
   footer: {
@@ -40,27 +43,33 @@ export default function Footer() {
   return (
     <div className={classes.footer}>
       <div className={classes.inner}>
-        <ProjectLogo /> © {new Date().getFullYear()} Design & developed 💚 by
-        Sabelo Mkhwanazi
+        <Center>
+          <Text className={petrona.className}>
+            © {new Date().getFullYear()} Design & developed 💚 by Sabelo
+            Mkhwanazi
+          </Text>
+        </Center>
         <Group className={classes.links}>
           <Link
             style={{ color: "inherit", textDecoration: "inherit" }}
             href="/"
           >
-            <Text transform="none">Home</Text>
+            <Text className={petrona.className} transform="none">
+              Home
+            </Text>
           </Link>
 
           <Link
             style={{ color: "inherit", textDecoration: "inherit" }}
             href="/createStream"
           >
-            <Text>Create Stream</Text>
+            <Text className={petrona.className}>Create Stream</Text>
           </Link>
           <Link
             style={{ color: "inherit", textDecoration: "inherit" }}
             href="/joinStream"
           >
-            <Text>Join Stream</Text>
+            <Text className={petrona.className}>Join Stream</Text>
           </Link>
           {/* <Link
             style={{ color: "inherit", textDecoration: "inherit" }}
@@ -69,6 +78,7 @@ export default function Footer() {
             <Text>Upload Video</Text>
           </Link> */}
         </Group>
+
         <Group spacing="xs" position="right" noWrap>
           <ActionIcon
             color="#8892B0"

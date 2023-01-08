@@ -5,37 +5,18 @@ import {
   Button,
   Image,
   createStyles,
+  Center,
 } from "@mantine/core";
 import { IconPlayerPlay } from "@tabler/icons";
 import Link from "next/link";
 import ReactRotatingText from "react-rotating-text";
 import HeroVideo from "../HeroVideo";
+import { Petrona, Fredoka_One } from "@next/font/google";
+
+const petrona = Petrona({ weight: "500" });
+const fredokaOne = Fredoka_One({ weight: "400" });
 
 const useStyles = createStyles((theme) => ({
-  title: {
-    fontWeight: 800,
-    fontSize: 40,
-    letterSpacing: -1,
-    paddingLeft: theme.spacing.md,
-    paddingRight: theme.spacing.md,
-    color:
-      theme.colorScheme === "dark"
-        ? theme.colors.dark[0]
-        : theme.colors.gray[7],
-    marginBottom: theme.spacing.xs,
-    textAlign: "center",
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-
-    "@media (max-width: 520px)": {
-      fontSize: 28,
-      textAlign: "left",
-    },
-  },
-
-  highlight: {
-    color: "#00eb88",
-  },
-
   description: {
     color:
       theme.colorScheme === "dark"
@@ -111,34 +92,83 @@ export default function HeroPage() {
   return (
     <>
       <div>
-        <Title className={classes.title}>
-          A decentralized live streaming platform thats <br />
-          allows you to broadcast content{" "}
-          <Text component="span" inherit className={classes.highlight}>
-            <ReactRotatingText
-              className={classes.ratateText}
-              color="#00eb88"
-              items={[
-                "Film/TV.",
-                "Publishers.",
-                "Broadcasters.",
-                "eLearning.",
-                "Advertisers.",
-                "Sports.",
-                "News",
-              ]}
-            />
-          </Text>
-        </Title>
+        <Center>
+          <Title
+            className={fredokaOne.className}
+            styles={(theme) => ({
+              title: {
+                fontWeight: 800,
+                fontSize: 40,
+                letterSpacing: -1,
+                paddingLeft: theme.spacing.md,
+                paddingRight: theme.spacing.md,
+                color:
+                  theme.colorScheme === "dark"
+                    ? theme.colors.dark[0]
+                    : theme.colors.gray[7],
+                marginBottom: theme.spacing.xs,
+                textAlign: "center",
+                fontFamily: `Greycliff CF, ${theme.fontFamily}`,
 
-        <Container size={640}>
-          <Text size="lg" className={classes.description}>
-            Engaging with your audience in real time — we’re talking live
-            streams. we offer you a platform to host and stream your content and
-            everything you need to monetization niche.
-          </Text>
-        </Container>
+                "@media (max-width: 520px)": {
+                  fontSize: 28,
+                  textAlign: "left",
+                },
+              },
+            })}
+          >
+            A decentralized live streaming platform thats <br />
+            allows you to broadcast content{" "}
+            <Text
+              component="span"
+              inherit
+              className={fredokaOne.className}
+              styles={{
+                color: "#00eb88",
+              }}
+            >
+              <ReactRotatingText
+                className={classes.ratateText}
+                color="#00eb88"
+                items={[
+                  "Film/TV.",
+                  "Publishers.",
+                  "Broadcasters.",
+                  "eLearning.",
+                  "Advertisers.",
+                  "Sports.",
+                  "News",
+                ]}
+              />
+            </Text>
+          </Title>
+        </Center>
+        <Center>
+          <Container size={740}>
+            <Text
+              size="lg"
+              className={petrona.className}
+              styles={(theme) => ({
+                description: {
+                  color:
+                    theme.colorScheme === "dark"
+                      ? theme.colors.dark[0]
+                      : theme.colors.gray[7],
+                  textAlign: "center",
 
+                  "@media (max-width: 520px)": {
+                    fontSize: theme.fontSizes.md,
+                    textAlign: "left",
+                  },
+                },
+              })}
+            >
+              Engaging with your audience in real time — we’re talking live
+              streams. we offer you a platform to host and stream your content
+              and everything you need to monetization niche.
+            </Text>
+          </Container>
+        </Center>
         <div className={classes.controls}>
           <Link
             style={{ color: "inherit", textDecoration: "inherit" }}
@@ -164,7 +194,14 @@ export default function HeroPage() {
                 },
               })}
             >
-              Get started
+              <Text
+                fw={700}
+                fz="xl"
+                color="black"
+                className={petrona.className}
+              >
+                Get started
+              </Text>
             </Button>
           </Link>
         </div>

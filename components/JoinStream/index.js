@@ -1,26 +1,12 @@
 import { Player, useLivepeerProvider } from "@livepeer/react";
 import { useState } from "react";
 import Script from "next/script";
+import { Petrona } from "@next/font/google";
+
+const petrona = Petrona({ weight: "500" });
 
 import { JoinStreamButton } from "../JoinStreamButton";
-import {
-  Flex,
-  Box,
-  Button,
-  Text,
-  Center,
-  TextInput,
-  createStyles,
-  Title,
-  CopyButton,
-  ActionIcon,
-  Tooltip,
-  Group,
-  Container,
-  Badge,
-  List,
-  ThemeIcon,
-} from "@mantine/core";
+import { Box, Text, Center, TextInput, createStyles } from "@mantine/core";
 import HeaderTitle from "../HeaderTitle";
 import PushChat from "../PushChat";
 
@@ -73,6 +59,7 @@ export default function JoinStream() {
       <Center>
         <div>
           <Box
+            mt={50}
             hidden={
               renderPlayer && (
                 <>
@@ -81,7 +68,7 @@ export default function JoinStream() {
               )
             }
           >
-            <Text className="block text-sm font-medium text-gray-700">
+            <Text fz="lg" fw={700} className={petrona.className}>
               Playback ID:
             </Text>
             <div className="my-4">

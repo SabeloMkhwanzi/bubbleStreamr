@@ -11,6 +11,12 @@ import { NotificationsProvider } from "@mantine/notifications";
 // Rainbowkit wallet
 import "@rainbow-me/rainbowkit/styles.css";
 import { RainbowKitProvider, getDefaultWallets } from "@rainbow-me/rainbowkit";
+import {
+  LivepeerConfig,
+  ThemeConfig,
+  createReactClient,
+  studioProvider,
+} from "@livepeer/react";
 
 import {
   mainnet,
@@ -44,23 +50,6 @@ const wagmiClient = createClient({
   connectors,
   provider,
 });
-
-import {
-  LivepeerConfig,
-  ThemeConfig,
-  createReactClient,
-  studioProvider,
-} from "@livepeer/react";
-
-const theme: ThemeConfig = {
-  colors: {
-    accent: "rgb(0, 145, 255)",
-    containerBorderColor: "rgba(0, 145, 255, 0.9)",
-  },
-  fonts: {
-    display: "Inter",
-  },
-};
 
 export default function App(props: AppProps) {
   // Defining Color Mode
