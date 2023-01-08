@@ -45,8 +45,6 @@ const useStyles = createStyles((theme) => ({
 }));
 
 export default function JoinStream() {
-  const { classes } = useStyles();
-  const provider = useLivepeerProvider();
   const [playbackId, setPlaybackId] = useState("");
   const [renderPlayer, setRenderPlayer] = useState(false);
   const setRenderPlayerChild = (value) => {

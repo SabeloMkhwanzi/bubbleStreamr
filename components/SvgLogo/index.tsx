@@ -19,14 +19,6 @@ export default function SvgLogo() {
     },
   };
 
-  //   const bounceTransition = {
-  //     x: {
-  //       duration: 5,
-  //       yoyo: Infinity,
-  //       ease: "easeIn",
-  //     },
-  //   };
-
   return (
     <div>
       <motion.svg
@@ -51,10 +43,6 @@ export default function SvgLogo() {
           variants={svgVariants}
           initial="start"
           animate="finished"
-          //   transition={bounceTransition}
-          //   animate={{
-          //     y: ["0em", "12.8em"],
-          //   }}
           cx="6"
           cy="16"
           r="3"

@@ -3,7 +3,6 @@ import {
   Text,
   Container,
   Button,
-  Image,
   createStyles,
   Center,
 } from "@mantine/core";
@@ -87,7 +86,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 export default function HeroPage() {
-  const { classes, cx } = useStyles();
+  const { classes } = useStyles();
 
   return (
     <>
@@ -165,7 +164,7 @@ export default function HeroPage() {
             >
               Engaging with your audience in real time — we’re talking live
               streams. we offer you a platform to host and stream your content
-              and everything you need to monetization niche.
+              and everything you need to monetization your niche.
             </Text>
           </Container>
         </Center>

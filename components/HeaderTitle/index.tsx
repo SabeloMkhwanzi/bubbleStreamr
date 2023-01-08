@@ -1,4 +1,3 @@
-import React from "react";
 import { Center, Box, Title, Text, createStyles } from "@mantine/core";
 import { useLivepeerProvider } from "@livepeer/react";
 import { Fredoka_One, Petrona } from "@next/font/google";
@@ -17,7 +16,6 @@ const useStyles = createStyles((theme) => ({
 }));
 
 export default function HeaderTitle() {
-  const { classes } = useStyles();
   const provider = useLivepeerProvider();
 
   return (

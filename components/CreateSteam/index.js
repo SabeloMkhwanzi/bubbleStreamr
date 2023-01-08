@@ -18,13 +18,10 @@ import {
   Tooltip,
   Group,
   Container,
-  Badge,
-  List,
-  ThemeIcon,
   Accordion,
 } from "@mantine/core";
 import HeroVideo from "../HeroVideo";
-import { IconCopy, IconCheck, IconCircleCheck } from "@tabler/icons";
+import { IconCopy, IconCheck } from "@tabler/icons";
 import { showNotification, updateNotification } from "@mantine/notifications";
 import HeaderTitle from "../HeaderTitle";
 import PushChat from "../PushChat";

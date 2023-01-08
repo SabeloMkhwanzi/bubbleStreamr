@@ -1,4 +1,4 @@
-import { createStyles, Anchor, Group, ActionIcon, Text } from "@mantine/core";
+import { createStyles, Group, ActionIcon, Text } from "@mantine/core";
 import Link from "next/link";
 import {
   IconBrandTwitter,
@@ -71,12 +71,6 @@ export default function Footer() {
           >
             <Text className={petrona.className}>Join Stream</Text>
           </Link>
-          {/* <Link
-            style={{ color: "inherit", textDecoration: "inherit" }}
-            href="/publish"
-          >
-            <Text>Upload Video</Text>
-          </Link> */}
         </Group>
 
         <Group spacing="xs" position="right" noWrap>

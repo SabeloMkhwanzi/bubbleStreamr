@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { createStyles } from "@mantine/core";
 import Link from "next/link";
-import { Box } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
   links: {

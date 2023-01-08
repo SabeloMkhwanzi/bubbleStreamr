@@ -5,24 +5,7 @@ import {
   useUpdateAsset,
 } from "@livepeer/react";
 import { useState } from "react";
-import {
-  Flex,
-  Box,
-  Button,
-  Text,
-  Center,
-  TextInput,
-  createStyles,
-  Title,
-  CopyButton,
-  ActionIcon,
-  Tooltip,
-  Group,
-  Container,
-  Badge,
-  List,
-  ThemeIcon,
-} from "@mantine/core";
+import { Box, Button, Center, TextInput } from "@mantine/core";
 import HeaderTitle from "../HeaderTitle";
 
 export default function VideoUploader() {
@@ -42,36 +25,6 @@ export default function VideoUploader() {
 
   return (
     <>
-      {/* <Group position="center" my={10} mt="md">
-        <Dropzone
-          accept="video/mp4"
-          openRef={openRef}
-          onDrop={() => {}}
-          activateOnClick={false}
-          styles={{ inner: { pointerEvents: "all" } }}
-        >
-          <Group position="center">
-            <Button
-              styles={(theme) => ({
-                root: {
-                  backgroundColor: "#00eb88",
-                  borderRadius: 10,
-                  height: 42,
-                  paddingLeft: 20,
-                  paddingRight: 20,
-
-                  "&:hover": {
-                    backgroundColor: theme.fn.darken("#00eb88", 0.05),
-                  },
-                },
-              })}
-              onClick={() => openRef.current()}
-            >
-              Select files
-            </Button>
-          </Group>
-        </Dropzone>
-      </Group> */}
       <HeaderTitle />
       <Center>
         <Box my={10}>

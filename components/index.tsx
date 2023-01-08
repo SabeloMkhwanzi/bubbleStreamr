@@ -15,4 +15,3 @@ export { default as PushNotifiction } from "./PushNotifiction";
 export { default as NotificationItems } from "./NotificationItems";
 export { default as PushChat } from "./PushChat";
 export { default as ConnectWallet } from "./ConnectWallet";
-//export { default as XmtpHome } from "./XmtpChat/XmtpHome";

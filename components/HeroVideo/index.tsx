@@ -1,18 +1,8 @@
 import { Player } from "@livepeer/react";
 import { Container, createStyles } from "@mantine/core";
-import Image from "next/image";
 
 const playbackId =
   "bafybeickrmzg5hsvokjjsev5chfwksfsh7yckzggdtzkvfh6rnejm3dfua";
-
-//import blenderPoster from "../../public/images/blender-poster.png";
-
-// const PosterImage = () => {
-//   return (
-//     // eslint-disable-next-line jsx-a11y/alt-text
-//     <Image src={blenderPoster} alt="video" priority placeholder="blur" />
-//   );
-// };
 
 const useStyles = createStyles((theme) => ({
   Paper: {
@@ -32,7 +22,6 @@ export default function HeroVideo() {
         showPipButton
         showTitle={false}
         aspectRatio="16to9"
-        //poster={<PosterImage />}
         controls={{
           autohide: 100000,
         }}

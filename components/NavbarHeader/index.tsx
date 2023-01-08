@@ -67,7 +67,6 @@ const useStyles = createStyles((theme) => ({
 
 export default function NavbarHeader() {
   const { classes } = useStyles();
-  const [opened, { toggle }] = useDisclosure(false);
 
   return (
     <Header
