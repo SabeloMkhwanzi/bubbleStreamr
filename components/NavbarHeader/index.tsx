@@ -10,7 +10,9 @@ import { useDisclosure } from "@mantine/hooks";
 import { IconPlayerPlay } from "@tabler/icons";
 import Link from "next/link";
 import ColorModeButton from "../ColorModeButton";
+import ConnectWallet from "../ConnectWallet";
 import ProjectLogo from "../ProjectLogo";
+import PushNotifiction from "../PushNotifiction";
 
 const HEADER_HEIGHT = 80;
 
@@ -66,7 +68,7 @@ export default function NavbarHeader() {
   const [opened, { toggle }] = useDisclosure(false);
 
   return (
-    <Header mx="17em" height={HEADER_HEIGHT} sx={{ borderBottom: 0 }} mb={120}>
+    <Header mx="5em" height={HEADER_HEIGHT} sx={{ borderBottom: 0 }} mb={120}>
       <Container className={classes.inner} fluid>
         <Group>
           {/* <Burger
@@ -86,14 +88,7 @@ export default function NavbarHeader() {
               Home
             </Button>
           </Link>
-          <Link
-            style={{ color: "inherit", textDecoration: "inherit" }}
-            href="/publish"
-          >
-            <Button variant="default" radius="md" className={classes.linkLabel}>
-              Upload Video
-            </Button>
-          </Link>
+
           <Link
             style={{ color: "inherit", textDecoration: "inherit" }}
             href="/createStream"
@@ -110,34 +105,22 @@ export default function NavbarHeader() {
               Join Stream
             </Button>
           </Link>
+          {/* <Link
+            style={{ color: "inherit", textDecoration: "inherit" }}
+            href="/publish"
+          >
+            <Button variant="default" radius="md" className={classes.linkLabel}>
+              Upload Video
+            </Button>
+          </Link> */}
         </Group>
 
         <Group className={classes.linkLabel}>
+          <PushNotifiction />
           <div className={classes.links}>
             <ColorModeButton />
           </div>
-          <Button
-            className={classes.links}
-            rightIcon={<IconPlayerPlay size={20} color="black" stroke={5} />}
-            styles={(theme) => ({
-              root: {
-                backgroundColor: "#00eb88",
-                borderRadius: 10,
-                height: 42,
-                paddingLeft: 20,
-                paddingRight: 20,
-
-                "&:hover": {
-                  backgroundColor: theme.fn.darken("#00eb88", 0.05),
-                },
-              },
-              leftIcon: {
-                marginRight: 15,
-              },
-            })}
-          >
-            Connect to Bubble
-          </Button>
+          <ConnectWallet />
         </Group>
       </Container>
     </Header>

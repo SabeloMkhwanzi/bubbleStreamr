@@ -6,41 +6,39 @@ import {
   useUpdateAsset,
 } from "@livepeer/react";
 import { useState } from "react";
-import {
-  Flex,
-  Box,
-  Button,
-  Text,
-  Center,
-  TextInput,
-  createStyles,
-  Title,
-  CopyButton,
-  ActionIcon,
-  Tooltip,
-  Group,
-  Container,
-  Badge,
-  List,
-  ThemeIcon,
-} from "@mantine/core";
+import { Box, Button, Center, TextInput, Text } from "@mantine/core";
 import HeaderTitle from "../HeaderTitle";
 
 export default function VideoUploader() {
-  const [video, setVideo] = useState();
+  const [video, setVideo] = useState<File | undefined>(undefined);
 
   //1. useCreateAsset Hook for creating a new Asset
-  const { mutate: createAsset, data: createdAsset, status } = useCreateAsset();
+  const {
+    mutate: createAsset,
+    data: createdAsset,
+    status,
+  } = useCreateAsset(
+    video
+      ? {
+          sources: [{ name: video.name, file: video }] as const,
+        }
+      : null
+  );
 
   //2. useAsset - Hook for retrieving an Asset(opens in a new tab) based on a unique identifier
   const { data: asset } = useAsset({
-    assetId: createdAsset?.id,
-    refetchInterval: 10000,
+    refetchInterval: (asset) => (!asset?.playbackUrl ? 5000 : false),
   });
 
   //3. useUpdateAsset - Hook for updating an existing Asset(opens in a new tab).
-  const { mutate: updateAsset, status: updateStatus, error } = useUpdateAsset();
-
+  const {
+    mutate: updateAsset,
+    status: updateStatus,
+    error,
+  } = useUpdateAsset({
+    assetId: asset?.id,
+    storage: { ipfs: true },
+  });
   return (
     <>
       {/* <Group position="center" my={10} mt="md">
@@ -102,10 +100,7 @@ export default function VideoUploader() {
           disabled={!video || status === "loading"}
           onClick={() => {
             if (video) {
-              createAsset?.({
-                name: video.name,
-                file: video,
-              });
+              createAsset?.();
             }
           }}
         >
@@ -131,12 +126,7 @@ export default function VideoUploader() {
           }
           onClick={async () => {
             if (asset?.id) {
-              updateAsset?.({
-                assetId: asset.id,
-                storage: {
-                  ipfs: true,
-                },
-              });
+              updateAsset?.();
             }
           }}
         >
@@ -144,14 +134,15 @@ export default function VideoUploader() {
         </Button>
         {asset?.playbackId && (
           <>
-            <div>Asset Name: {asset?.name}</div>
-            <div>Playback URL: {asset?.playbackUrl}</div>
-            <div>IPFS CID: {asset?.storage?.ipfs?.cid ?? "None"}</div>
-            <Player playbackId={asset.playbackId} />
+            <Text>Asset Name: {asset?.name}</Text>
+            <Box>Playback URL: {asset?.playbackUrl}</Box>
+            <Text>IPFS CID: {asset?.storage?.ipfs?.cid ?? "None"}</Text>
+            <Player playbackId={asset?.playbackId} />
           </>
         )}
         {error && <div>{error.message}</div>}
       </Center>
+      {/* <XmtpHome /> */}
     </>
   );
 }

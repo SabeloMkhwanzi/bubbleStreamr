@@ -5,19 +5,26 @@ import {
   ColorSchemeProvider,
   ColorScheme,
 } from "@mantine/core";
+import { NotificationsProvider } from "@mantine/notifications";
 //import WelcomeScreen from "../components/WelcomeScreen";
 
 // Rainbowkit wallet
 import "@rainbow-me/rainbowkit/styles.css";
 import { RainbowKitProvider, getDefaultWallets } from "@rainbow-me/rainbowkit";
 
-import { mainnet, optimism, polygon, polygonMumbai } from "wagmi/chains";
+import {
+  mainnet,
+  optimism,
+  polygon,
+  polygonMumbai,
+  goerli,
+} from "wagmi/chains";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 
 const { chains, provider } = configureChains(
-  [mainnet, optimism, polygon, polygonMumbai],
+  [mainnet, optimism, polygon, polygonMumbai, goerli],
   [
     alchemyProvider({
       //apiKey: process.env.ALCHEMY_ID
@@ -94,17 +101,19 @@ export default function App(props: AppProps) {
             },
           }}
         >
-          {/* {!loading ? <Component {...pageProps} /> : <WelcomeScreen />} */}
-          <WagmiConfig client={wagmiClient}>
-            <RainbowKitProvider chains={chains}>
-              <LivepeerConfig
-                dehydratedState={pageProps?.dehydratedState}
-                client={livepeerClient}
-              >
-                <Component {...pageProps} />
-              </LivepeerConfig>
-            </RainbowKitProvider>
-          </WagmiConfig>
+          <NotificationsProvider>
+            {/* {!loading ? <Component {...pageProps} /> : <WelcomeScreen />} */}
+            <WagmiConfig client={wagmiClient}>
+              <RainbowKitProvider chains={chains}>
+                <LivepeerConfig
+                  dehydratedState={pageProps?.dehydratedState}
+                  client={livepeerClient}
+                >
+                  <Component {...pageProps} />
+                </LivepeerConfig>
+              </RainbowKitProvider>
+            </WagmiConfig>
+          </NotificationsProvider>
         </MantineProvider>
       </ColorSchemeProvider>
     </>

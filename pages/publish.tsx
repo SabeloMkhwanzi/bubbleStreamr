@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Footer, NavbarHeader, VideoUploader } from "../components";
+import { Footer, NavbarHeader, PushChat, VideoUploader } from "../components";
 import { AppShell, ScrollArea } from "@mantine/core";
 
 //import { Inter } from "@next/font/google";
@@ -29,7 +29,7 @@ export default function createStream() {
         })}
       >
         <ScrollArea style={{ height: "100%" }}>
-          <VideoUploader />
+          {/* <VideoUploader /> */}
         </ScrollArea>
       </AppShell>
     </>

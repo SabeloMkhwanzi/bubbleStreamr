@@ -22,6 +22,7 @@ import {
   ThemeIcon,
 } from "@mantine/core";
 import HeaderTitle from "../HeaderTitle";
+import PushChat from "../PushChat";
 
 const useStyles = createStyles((theme) => ({
   title: {
@@ -136,6 +137,9 @@ export default function JoinStream() {
             <>
               <Box my={5}>
                 <Player showTitle title controls playbackId={playbackId} />
+              </Box>
+              <Box>
+                <PushChat />
               </Box>
             </>
           )}

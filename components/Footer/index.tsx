@@ -49,12 +49,7 @@ export default function Footer() {
           >
             <Text transform="none">Home</Text>
           </Link>
-          <Link
-            style={{ color: "inherit", textDecoration: "inherit" }}
-            href="/publish"
-          >
-            <Text>Upload Video</Text>
-          </Link>
+
           <Link
             style={{ color: "inherit", textDecoration: "inherit" }}
             href="/createStream"
@@ -67,6 +62,12 @@ export default function Footer() {
           >
             <Text>Join Stream</Text>
           </Link>
+          {/* <Link
+            style={{ color: "inherit", textDecoration: "inherit" }}
+            href="/publish"
+          >
+            <Text>Upload Video</Text>
+          </Link> */}
         </Group>
         <Group spacing="xs" position="right" noWrap>
           <ActionIcon

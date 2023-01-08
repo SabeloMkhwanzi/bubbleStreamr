@@ -113,7 +113,7 @@ export default function HeroPage() {
       <div>
         <Title className={classes.title}>
           A decentralized live streaming platform thats <br />
-          allows you to upload and broadcast video content:{" "}
+          allows you to broadcast content{" "}
           <Text component="span" inherit className={classes.highlight}>
             <ReactRotatingText
               className={classes.ratateText}
@@ -142,7 +142,7 @@ export default function HeroPage() {
         <div className={classes.controls}>
           <Link
             style={{ color: "inherit", textDecoration: "inherit" }}
-            href="explore"
+            href="/createStream"
           >
             <Button
               className={classes.control}
