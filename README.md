@@ -46,7 +46,7 @@ streaming and improve content monetization for the creator in countless ways.
 <li>Paid subscription options for Monetize your live streams via a pay-per-view paywall.:[Unlock Protocol](https://unlock-protocol.com/)</li>
 <li>Decentralised naming for the user:[ENS](https://ens.domains/) </li>
    
-### Project Stack
+<h4> Project Stack</h4>
 - Video Streaming SDK: [Livepeer](https://livepeer.org/) - The World's Open Video Infrastructure Livepeer is a decentralized video infrastructure network.
 - IN-app Notifications and Chat:[Push](https://push.org/) - Push Protocol is a web3 communication network, enabling cross-chain notifications and messaging for dapps, wallets, and services
 - Decentralised Name: [ENS](https://ens.domains/) - Decentralised naming for wallets, websites, & more.
@@ -57,6 +57,12 @@ streaming and improve content monetization for the creator in countless ways.
   - [2. Chakra-ui](https://chakra-ui.com/) - Create accessible React apps with speed
 - [React-Query](https://react-query-v3.tanstack.com/) - Fetch, cache and update data in your React and React Native applications all without touching any "global state"
 - Hosting Platform: [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+<h4>How it work:</h4>
+<li>First and primarily, the platform has been created for social purposes, that is, to facilitate content producers and consumers or followers.</li>
+<li>Content creators will connect their wallets to access the entire DApp and create a stream.</li>
+<li>After the stream is created, the content creators can share the Playback id with the users by using Push Notifications, a decentralized protocol for transmitting notifications. The notifications are then sent to the Streamers channel, where all subscribers are aware of the stream. Anyone can subscribe to the Channel by heading to the Push Notifications Icon and clicking the Subscribe button.</li>
+<li>When viewers are notified and ready to join the stream, users can pay for the subscription using the Unlock protocol to mint an NFT token to gain access to the stream - which is a way to assist content creators monetize and fans to support.</li>
 
 ##### HomePage
 ![](https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/BubbleSteamr-hp.png)
