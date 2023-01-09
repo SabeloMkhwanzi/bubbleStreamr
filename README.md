@@ -1,4 +1,8 @@
-# Next Video Build Hackathon 
+<h1 align="center">
+   <b>
+ Next Video Build Hackathon Livepeer — Encode Club 
+    </b>
+</h1>
 
 <h1 align="center">
    <b>
@@ -12,9 +16,15 @@
     <a href="https://github.com/SabeloMkhwanzi/bubbleStreamr/edit/main/README.md"><b>Documentation</b></a>
 </p> 
 
-# BubbleStreamr - A decentralized live streaming platform 
+<p align="center">
+ <h3>
+ BubbleStreamr - A decentralized live streaming platform for social, content Creators 
+</h3>
+Engaging with your audience in real time. The platform allows you to host and stream your content, and a best way to monetization your brand.
+</b>
+</p>
 
-Engaging with your audience in real time — we’re talking live streams. we offer you a platform to host and stream your content and everything you need to monetization brand it. 
+ 
 
 ### Intro
 
