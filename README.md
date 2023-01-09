@@ -91,10 +91,12 @@ npm install
 
 to install all the package dependencies for the project
 
-Create a .env.local file in the root folder and populate it with the following variables, Get Api a key from [Livepeer](https://livepeer.org/)
+Create a .env.local file in the root folder and populate it with the following variables, Get Api a key from [Livepeer](https://livepeer.org/), [Push](https://push.org/) and Using the Unlock Dashboard, create a lock. After generating the lock, modify the configuration in components\JoinStream\index.js
 
 ```bash
 NEXT_PUBLIC_STUDIO_API_KEY=
+NEXT_PUBLIC_ALCHEMY_ID=
+NEXT_PUBLIC_PUSHCHAT_API_KEY=
 ```
 
 
@@ -103,7 +105,6 @@ Finally, run the development server:
 ```bash
 npm run dev
 ```
-
 
 
 #### GitHub Repository: https://github.com/SabeloMkhwanzi/bubbleStreamr
