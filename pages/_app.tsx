@@ -33,8 +33,7 @@ const { chains, provider } = configureChains(
   [mainnet, optimism, polygon, polygonMumbai, goerli],
   [
     alchemyProvider({
-      //apiKey: process.env.ALCHEMY_ID
-      apiKey: "oMM0vOj56LhAqY5t4YGaI8CdktKDNFsD",
+      apiKey: process.env.NEXT_PUBLIC_ALCHEMY_ID,
     }),
     publicProvider(),
   ]
@@ -57,7 +56,6 @@ export default function App(props: AppProps) {
   const toggleColorScheme = (value?: ColorScheme) =>
     setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));
   const { Component, pageProps } = props;
-  const [loading, setLoading] = useState(false);
 
   const livepeerClient = useMemo(() => {
     return createReactClient({
@@ -65,13 +63,6 @@ export default function App(props: AppProps) {
         apiKey: process.env.NEXT_PUBLIC_STUDIO_API_KEY,
       }),
     });
-  }, []);
-
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 5000);
   }, []);
 
   return (
@@ -91,7 +82,6 @@ export default function App(props: AppProps) {
           }}
         >
           <NotificationsProvider>
-            {/* {!loading ? <Component {...pageProps} /> : <WelcomeScreen />} */}
             <WagmiConfig client={wagmiClient}>
               <RainbowKitProvider chains={chains}>
                 <LivepeerConfig
