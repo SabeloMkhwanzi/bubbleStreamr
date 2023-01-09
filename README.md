@@ -58,11 +58,11 @@ streaming and improve content monetization for the creator in countless ways.
 - [React-Query](https://react-query-v3.tanstack.com/) - Fetch, cache and update data in your React and React Native applications all without touching any "global state"
 - Hosting Platform: [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-##### Diffusion HomePage
-![]()
+##### HomePage
+![](https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/BubbleSteamr-hp.png)
 
-##### Diffusion Analytics
-![]()
+##### Streaming
+![](https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/creating%20stream.png)
 
 
 ## Roadmap for the Project
