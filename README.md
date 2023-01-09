@@ -34,16 +34,16 @@ Whereas YouTube other streaming platform are incredible in numerous cases, it ma
 
 <h4>Our Mission:</h4>
 <p>
-Understanding wants of content creators and their views, we handle to solve these issues directly by creating a better environment for users utilizing
+Understanding the needs of content creators and their views, we handle to solve these issues directly by creating a better environment for users utilizing
 decentralization, open-source development, and transparent terms & conditions. Using Ethereum-based decentralized administrations to improve decentralized online
-streaming and improve content monetization for the creator in countless ways.
+streaming and improve content monetization for creators in countless ways.
 </p>    
 
 <h4>Our Service:</h4>
-<li>Live streams with live chat so you can interact directly with your audience - <a href="https://livepeer.org">Livepeer</a></li>
-<li>Broadcast your live streams on any device.</li>
+<li>Live streams with live chat so you can interact directly with your audience - <a href="https://livepeer.org">Livepeer</a></li> and <a href="https://push.org/">Push</a>
+<li>Broadcast your live streams on any device powered by <a href="https://livepeer.org">Livepeer</a>.</li>
 <li>Notify your members you’re going live with in-app Push notifications: <a href="https://push.org/">Push</a>
-<li>Paid subscription options for Monetize your live streams via a pay-per-view paywall: <a href="https://ens.domains](https://unlock-protocol.com">Unlock Protocol</a></li>
+<li>Paid subscription options for monetization of your content via a pay-per-view paywall: <a href="https://ens.domains](https://unlock-protocol.com">Unlock Protocol</a></li>
 <li>Decentralised naming for the user: <a href="https://ens.domains">ENS</a> </li>
    
  #### Project Stack
