@@ -8,7 +8,7 @@
 
 
 <p align="center">
-    <a href="https://"><b>Website</b></a> •
+    <a href="https://bubble-streamr.vercel.app/"><b>Website</b></a> •
     <a href="https://github.com/SabeloMkhwanzi/bubbleStreamr/edit/main/README.md"><b>Documentation</b></a>
 </p> 
 
