@@ -13,6 +13,9 @@
 
 <p align="center">
     <a href="https://bubble-streamr.vercel.app/"><b>Website</b></a> •
+    <a href="https://github.com/SabeloMkhwanzi"><b>Github</b></a> •
+    <a href="https://twitter.com/SabeloMkhwanaz"><b>Twitter</b></a> •
+    <a href="https://www.linkedin.com/in/sabelo-mkhwanazi-54ba431b1/"><b>LinkedIn</b></a> •
     <a href="https://github.com/SabeloMkhwanzi/bubbleStreamr/edit/main/README.md"><b>Documentation</b></a>
 </p> 
 
