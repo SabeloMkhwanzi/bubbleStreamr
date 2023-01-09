@@ -25,6 +25,7 @@ import { IconCopy, IconCheck } from "@tabler/icons";
 import { showNotification, updateNotification } from "@mantine/notifications";
 import HeaderTitle from "../HeaderTitle";
 import PushChat from "../PushChat";
+import { useAccount } from "wagmi";
 
 import { Petrona } from "@next/font/google";
 
@@ -78,6 +79,8 @@ const Pkey = `0x${PK}`;
 const signer = new ethers.Wallet(Pkey);
 
 export default function CreateStream() {
+  const { address } = useAccount();
+
   const { classes } = useStyles();
   const [streamName, setStreamName] = useState("");
   const {
@@ -88,7 +91,7 @@ export default function CreateStream() {
 
   const isLoading = useMemo(() => status === "loading", [status]);
 
-  const getEllipsisTxt = (str, n = 10) => {
+  const getEllipsisTxt = (str, n = 5) => {
     if (str) {
       return `${str.slice(0, n)}...${str.slice(str.length - n)}`;
     }
@@ -303,6 +306,15 @@ export default function CreateStream() {
                           {moment(stream.createdAt).format(
                             "MMMM Do YYYY, h:mm:ss a"
                           )}
+                        </Text>
+                      </Box>
+                      <Box mx={10}>
+                        <Text
+                          color="blue"
+                          ta="right"
+                          className={petrona.className}
+                        >
+                          {getEllipsisTxt(address)}
                         </Text>
                       </Box>
                     </Group>

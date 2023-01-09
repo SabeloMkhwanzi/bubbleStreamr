@@ -13,7 +13,6 @@ import "@rainbow-me/rainbowkit/styles.css";
 import { RainbowKitProvider, getDefaultWallets } from "@rainbow-me/rainbowkit";
 import {
   LivepeerConfig,
-  ThemeConfig,
   createReactClient,
   studioProvider,
 } from "@livepeer/react";
