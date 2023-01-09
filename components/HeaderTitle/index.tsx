@@ -42,6 +42,9 @@ export default function HeaderTitle() {
                 fontSize: 28,
                 textAlign: "left",
               },
+              "@media (max-width: 755px)": {
+                fontSize: theme.fontSizes.sm,
+              },
             },
           })}
         >

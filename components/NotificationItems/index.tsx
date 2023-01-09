@@ -7,7 +7,7 @@ import { IconCheck } from "@tabler/icons";
 export default function NotificationItems({ notifications, OptInChannel }) {
   return (
     <div>
-      <Menu width={600} position="bottom" withArrow shadow="md">
+      <Menu width="'100%" position="bottom" withArrow shadow="md">
         <Menu.Target>
           <Indicator offset={7} color="green.8" label="New" size={16}>
             <BellIcon

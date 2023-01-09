@@ -44,7 +44,15 @@ export default function Footer() {
     <div className={classes.footer}>
       <div className={classes.inner}>
         <Center>
-          <Text className={petrona.className}>
+          <Text
+            sx={(theme) => ({
+              fontSize: theme.fontSizes.md,
+              "@media (max-width: 755px)": {
+                fontSize: theme.fontSizes.sm,
+              },
+            })}
+            className={petrona.className}
+          >
             © {new Date().getFullYear()} Design & developed 💚 by Sabelo
             Mkhwanazi
           </Text>
