@@ -2,7 +2,7 @@
 
 <h1 align="center">
    <b>
-        <a href="https://"><img src="https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/bubblestreamr-logo2.png" /></a><br>
+        <a href="https://bubble-streamr.vercel.app/"><img src="https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/bubblestreamr-logo2.png" /></a><br>
     </b>
 </h1>
 
