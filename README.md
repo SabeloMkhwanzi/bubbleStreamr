@@ -30,16 +30,27 @@ Engaging with your audience in real time. The platform allows you to host and st
 <h4>Intro:</h4>
 <p>
 Whereas YouTube other streaming platform are incredible in numerous cases, it may be a centralized benefit that comes with its claim bushel of joy for creators and viewers. For starters, all capacity for video content is stored on centralized servers; hence, creators and users eventually have no control over what happens to their content. The streaming platform decides what should be on its platform, not the users.
-<p>   
+</p>   
 
-<h4>Our Mission:<h4>
+<h4>Our Mission:</h4>
 <p>
-Understanding wants of content creators and their views, we handle to solve these issues directly by creating distant better environment for users utilizing decentralization, open-source development, and transparent terms & conditions. Using Ethereum-based decentralized administrations to improve decentralized online streaming and improving content monetization for the creator in a costless manner. Users and broadcasters send streams through the stage.
-<p>   
+Understanding wants of content creators and their views, we handle to solve these issues directly by creating a better environment for users utilizing
+decentralization, open-source development, and transparent terms & conditions. Using Ethereum-based decentralized administrations to improve decentralized online
+streaming and improve content monetization for the creator in countless ways.
+</p>    
 
-### Project Solution 
-
+<h4>Our Service:</h4>
+<li>Live streams with live chat so you can interact directly with your audience - [Livepeer](https://livepeer.org/)</li>
+<li>Broadcast your live streams on any device.</li>
+<li>Notify your members you’re going live with in-app Push notifications:[Push](https://push.org/)</li>
+<li>Paid subscription options for Monetize your live streams via a pay-per-view paywall.:[Unlock Protocol](https://unlock-protocol.com/)</li>
+<li>Decentralised naming for the user:[ENS](https://ens.domains/) </li>
+   
 ### Project Stack
+- Video Streaming SDK: [Livepeer](https://livepeer.org/) - The World's Open Video Infrastructure Livepeer is a decentralized video infrastructure network.
+- IN-app Notifications and Chat:[Push](https://push.org/) - Push Protocol is a web3 communication network, enabling cross-chain notifications and messaging for dapps, wallets, and services
+- Decentralised Name: [ENS](https://ens.domains/) - Decentralised naming for wallets, websites, & more.
+- pay-per-view paywall: [Unlock Protocol](https://unlock-protocol.com/) 
 - Building Framework: [Nextjs](https://nextjs.org/) -Next.js is an open-source web development framework created by Vercel enabling React-based web applications with server-side rendering and generating static websites
 - Frontend: 
   - [1. Mantine](https://mantine.dev/) - Build fully functional accessible web applications faster than ever
