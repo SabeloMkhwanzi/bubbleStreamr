@@ -40,15 +40,15 @@ streaming and improve content monetization for the creator in countless ways.
 </p>    
 
 <h4>Our Service:</h4>
-<li>Live streams with live chat so you can interact directly with your audience - [Livepeer](https://livepeer.org/)</li>
+<li>Live streams with live chat so you can interact directly with your audience - <a href="https://livepeer.org">Livepeer</a></li>
 <li>Broadcast your live streams on any device.</li>
-<li>Notify your members you’re going live with in-app Push notifications:[Push](https://push.org/)</li>
-<li>Paid subscription options for Monetize your live streams via a pay-per-view paywall.:[Unlock Protocol](https://unlock-protocol.com/)</li>
-<li>Decentralised naming for the user:[ENS](https://ens.domains/) </li>
+<li>Notify your members you’re going live with in-app Push notifications: <a href="https://push.org/">Push</a>
+<li>Paid subscription options for Monetize your live streams via a pay-per-view paywall: <a href="https://ens.domains](https://unlock-protocol.com">Unlock Protocol</a></li>
+<li>Decentralised naming for the user: <a href="https://ens.domains">ENS</a> </li>
    
-<h4> Project Stack</h4>
+ #### Project Stack
 - Video Streaming SDK: [Livepeer](https://livepeer.org/) - The World's Open Video Infrastructure Livepeer is a decentralized video infrastructure network.
-- IN-app Notifications and Chat:[Push](https://push.org/) - Push Protocol is a web3 communication network, enabling cross-chain notifications and messaging for dapps, wallets, and services
+- IN-app Notifications and Chat: [Push](https://push.org/) - Push Protocol is a web3 communication network, enabling cross-chain notifications and messaging for dapps, wallets, and services
 - Decentralised Name: [ENS](https://ens.domains/) - Decentralised naming for wallets, websites, & more.
 - pay-per-view paywall: [Unlock Protocol](https://unlock-protocol.com/) 
 - Building Framework: [Nextjs](https://nextjs.org/) -Next.js is an open-source web development framework created by Vercel enabling React-based web applications with server-side rendering and generating static websites
@@ -60,25 +60,20 @@ streaming and improve content monetization for the creator in countless ways.
 
 <h4>How it work:</h4>
 <li>First and primarily, the platform has been created for social purposes, that is, to facilitate content producers and consumers or followers.</li>
-<li>Content creators will connect their wallets to access the entire DApp and create a stream.</li>
+<li>Content creators will connect their wallets to access the entire DApp and create a stream using Livepeer a decentralized video infrastructure network.</li>
 <li>After the stream is created, the content creators can share the Playback id with the users by using Push Notifications, a decentralized protocol for transmitting notifications. The notifications are then sent to the Streamers channel, where all subscribers are aware of the stream. Anyone can subscribe to the Channel by heading to the Push Notifications Icon and clicking the Subscribe button.</li>
 <li>When viewers are notified and ready to join the stream, users can pay for the subscription using the Unlock protocol to mint an NFT token to gain access to the stream - which is a way to assist content creators monetize and fans to support.</li>
-
-##### HomePage
-![](https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/BubbleSteamr-hp.png)
+<li>Additionally, we added PushChat, which enables users to communicate with one another on the platform by connecting their wallets and exchanging messages.</li>
 
 ##### Streaming
 ![](https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/creating%20stream.png)
 
-
 ## Roadmap for the Project
-- [ ] Add
-  
-
+- [ ] Subscriber badges for your fans.
+- [ ] Upload content share using decentralized protocol 
+   
 ## Table of Contents
 - [Installing](#installing)
-- [How it Build](#how-it-Build)
- 
 
 ## Installing
 
