@@ -1,6 +1,6 @@
 <h1 align="center">
    <b>
- Next Video Build Hackathon Livepeer — Encode Club 
+ Next Video Build Hackathon Livepeer x Encode Club 
     </b>
 </h1>
 
@@ -16,12 +16,11 @@
     <a href="https://github.com/SabeloMkhwanzi/bubbleStreamr/edit/main/README.md"><b>Documentation</b></a>
 </p> 
 
-<p align="center">
- <h3>
+ <h3 align="center">
  BubbleStreamr - A decentralized live streaming platform for social, content Creators 
 </h3>
+<p align="center">
 Engaging with your audience in real time. The platform allows you to host and stream your content, and a best way to monetization your brand.
-</b>
 </p>
 
  
