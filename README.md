@@ -27,10 +27,15 @@ Engaging with your audience in real time. The platform allows you to host and st
 </p>
 
  
+<h4>Intro:</h4>
+<p>
+Whereas YouTube other streaming platform are incredible in numerous cases, it may be a centralized benefit that comes with its claim bushel of joy for creators and viewers. For starters, all capacity for video content is stored on centralized servers; hence, creators and users eventually have no control over what happens to their content. The streaming platform decides what should be on its platform, not the users.
+<p>   
 
-### Intro
-
-### Project mission 
+<h4>Our Mission:<h4>
+<p>
+Understanding wants of content creators and their views, we handle to solve these issues directly by creating distant better environment for users utilizing decentralization, open-source development, and transparent terms & conditions. Using Ethereum-based decentralized administrations to improve decentralized online streaming and improving content monetization for the creator in a costless manner. Users and broadcasters send streams through the stage.
+<p>   
 
 ### Project Solution 
 
