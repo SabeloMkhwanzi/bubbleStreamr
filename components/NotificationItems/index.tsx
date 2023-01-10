@@ -9,7 +9,12 @@ export default function NotificationItems({ notifications, OptInChannel }) {
     <div>
       <Menu width="'100%" position="bottom" withArrow shadow="md">
         <Menu.Target>
-          <Tooltip label="Push notifications of newly released live streams in the app">
+          <Tooltip
+            multiline
+            width={200}
+            transition="fade"
+            label="ℹ Push notifications of newly released live streams in the app"
+          >
             <Indicator offset={7} color="green.8" label="New" size={16}>
               <BellIcon
                 color="#FF0057"

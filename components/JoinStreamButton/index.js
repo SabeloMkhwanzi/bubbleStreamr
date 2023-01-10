@@ -1,6 +1,6 @@
 import React from "react";
 import { IconPlayerPlay } from "@tabler/icons";
-import { Button, Text } from "@mantine/core";
+import { Button, Text, Tooltip } from "@mantine/core";
 import { Petrona } from "@next/font/google";
 
 const petrona = Petrona({ weight: "500" });
@@ -54,32 +54,45 @@ export class JoinStreamButton extends React.Component {
     return (
       <div>
         {(locked === "pending" || locked === "locked") && (
-          <Button
-            rightIcon={<IconPlayerPlay size={20} color="black" stroke={5} />}
-            styles={(theme) => ({
-              root: {
-                backgroundColor: "#00eb88",
-                borderRadius: 10,
-                height: 42,
-                paddingLeft: 20,
-                paddingRight: 20,
-
-                "&:hover": {
-                  backgroundColor: theme.fn.darken("#00eb88", 0.05),
-                },
-              },
-              leftIcon: {
-                marginRight: 15,
-              },
-            })}
-            onClick={() => {
-              this.checkout();
-            }}
+          <Tooltip
+            multiline
+            withArrow
+            width={300}
+            transition="fade"
+            label="ℹ The Playback ID that you obtained from the stream creator or Push Alert should be copied and pasted. After that, click the subscribe button to purchase a NFT via the Unlock Protocol and join the stream."
           >
-            <Text fw={700} fz="xl" color="black" className={petrona.className}>
-              Subscribe
-            </Text>
-          </Button>
+            <Button
+              rightIcon={<IconPlayerPlay size={20} color="black" stroke={5} />}
+              styles={(theme) => ({
+                root: {
+                  backgroundColor: "#00eb88",
+                  borderRadius: 10,
+                  height: 42,
+                  paddingLeft: 20,
+                  paddingRight: 20,
+
+                  "&:hover": {
+                    backgroundColor: theme.fn.darken("#00eb88", 0.05),
+                  },
+                },
+                leftIcon: {
+                  marginRight: 15,
+                },
+              })}
+              onClick={() => {
+                this.checkout();
+              }}
+            >
+              <Text
+                fw={700}
+                fz="xl"
+                color="black"
+                className={petrona.className}
+              >
+                Subscribe
+              </Text>
+            </Button>
+          </Tooltip>
         )}
         {locked === "unlocked" && (
           <Button

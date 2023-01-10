@@ -119,7 +119,7 @@ export default function CreateStream() {
           cta: "",
           img: "",
         },
-
+        recipients: "eip155:5:0xF76371C3f5B4b06BC62e3Fb1101E1fa3073Fbb54", // recipient address
         channel: "eip155:5:0x67Ea839b012319B93319a2b13b08efB9bF18a6F3", // your channel address
         env: "staging",
       });
@@ -234,7 +234,7 @@ export default function CreateStream() {
                     multiline
                     transition="fade"
                     transitionDuration={300}
-                    label="In-app notifications with details about your stream, including a PLAYBACK ID, will be sent to your views on the community channel when you click this button."
+                    label="ℹ In-app notifications with details about your stream, including a PLAYBACK ID, will be sent to your views on the community channel when you click this button."
                     withArrow
                   >
                     <Button
