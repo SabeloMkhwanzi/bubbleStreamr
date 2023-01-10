@@ -12,7 +12,7 @@ export default function Home() {
         <title>BubbleStreamr</title>
         <meta
           name="description"
-          content="A live streaming platform allows you to upload and broadcast video content in real time"
+          content="A decentralized video streaming platform that provides live video streaming infrastructure to video content creators."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
