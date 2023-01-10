@@ -65,12 +65,15 @@ streaming and improve content monetization for creators in countless ways.
 <li>When viewers are notified and ready to join the stream, users can pay for the subscription using the Unlock protocol to mint an NFT token to gain access to the stream - which is a way to assist content creators monetize and fans to support.</li>
 <li>Additionally, we added PushChat, which enables users to communicate with one another on the platform by connecting their wallets and exchanging messages.</li>
 
-#### Project Showcase
+#### 1. Project Showcase
 ![](https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/BubbleSteamr-Presentation3.gif)
 
-#### Responsive 
+#### 2. Responsive 
+<h1 align="center">
+ 
 ![](https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/BubbleSteamr-Presentation-Responsive.gif)
-
+</h1>
+      
 #### Roadmap for the Project
 - [ ] Subscriber badges for your fans.
 - [ ] Upload function to share video using decentralized protocol 
