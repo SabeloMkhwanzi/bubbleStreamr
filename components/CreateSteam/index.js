@@ -20,6 +20,7 @@ import {
   Container,
   Accordion,
 } from "@mantine/core";
+import { useFullscreen } from "@mantine/hooks";
 import HeroVideo from "../HeroVideo";
 import { IconCopy, IconCheck } from "@tabler/icons";
 import { showNotification, updateNotification } from "@mantine/notifications";
@@ -80,7 +81,7 @@ const signer = new ethers.Wallet(Pkey);
 
 export default function CreateStream() {
   const { address } = useAccount();
-
+  const { toggle, fullscreen } = useFullscreen();
   const { classes } = useStyles();
   const [streamName, setStreamName] = useState("");
   const {
@@ -226,12 +227,19 @@ export default function CreateStream() {
           </Flex>
           {stream && (
             <>
-              <Container miw={800}>
-                <Group>
-                  <Box mt={6}>
+              <Container>
+                <Group mt={10}>
+                  <Tooltip
+                    width={220}
+                    multiline
+                    transition="fade"
+                    transitionDuration={300}
+                    label="In-app notifications with details about your stream, including a PLAYBACK ID, will be sent to your views on the community channel when you click this button."
+                    withArrow
+                  >
                     <Button
-                      fw={700}
-                      fz="xl"
+                      fw={500}
+                      fz="lg"
                       color="black"
                       className={petrona.className}
                       styles={(theme) => ({
@@ -280,10 +288,36 @@ export default function CreateStream() {
                         fw={700}
                         color="black"
                       >
-                        Push Notification
+                        Push Alerts
                       </Text>
                     </Button>
-                  </Box>
+                  </Tooltip>
+
+                  <Button
+                    fw={500}
+                    fz="lg"
+                    className={petrona.className}
+                    styles={(theme) => ({
+                      root: {
+                        backgroundColor: "#FF0057",
+                        borderRadius: 10,
+                        height: 42,
+                        paddingLeft: 20,
+                        paddingRight: 20,
+
+                        "&:hover": {
+                          backgroundColor: theme.fn.darken("#00eb88", 0.05),
+                        },
+                      },
+                      leftIcon: {
+                        marginRight: 15,
+                      },
+                    })}
+                    onClick={toggle}
+                    color={fullscreen ? "red" : "blue"}
+                  >
+                    {fullscreen ? "Exit" : "Fullscreen"}
+                  </Button>
 
                   <Box py={15}>
                     <Group mx={10}>
@@ -294,7 +328,6 @@ export default function CreateStream() {
                           })}
                           fw={700}
                           ta="right"
-                          color="white"
                           className={petrona.className}
                           fz="xl"
                         >
@@ -303,9 +336,7 @@ export default function CreateStream() {
                       </Box>
                       <Box mx={10}>
                         <Text ta="right" className={petrona.className}>
-                          {moment(stream.createdAt).format(
-                            "MMMM Do YYYY, h:mm:ss a"
-                          )}
+                          {moment(stream.createdAt).calendar()}
                         </Text>
                       </Box>
                       <Box mx={10}>
@@ -334,9 +365,10 @@ export default function CreateStream() {
                       <Text
                         fw={500}
                         tt="uppercase"
+                        color="red.5"
                         className={petrona.className}
                       >
-                        Useful information for your *
+                        Useful information for your
                       </Text>
                     </Accordion.Control>
                     <Accordion.Panel>
