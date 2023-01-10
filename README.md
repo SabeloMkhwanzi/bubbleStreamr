@@ -70,7 +70,7 @@ streaming and improve content monetization for creators in countless ways.
 
 #### Roadmap for the Project
 - [ ] Subscriber badges for your fans.
-- [ ] Upload content share using decentralized protocol 
+- [ ] Upload function to share video using decentralized protocol 
    
    
 #### Installing
@@ -81,7 +81,7 @@ streaming and improve content monetization for creators in countless ways.
 git clone https://github.com/SabeloMkhwanzi/bubbleStreamr
 ```
 
-2. open a terminal in the root directory of the project and run:
+2. open a terminal in the root directory of the project and run: If not runing add `npm install --force`
 
 ```bash
 npm install
@@ -89,7 +89,7 @@ npm install
 
 to install all the package dependencies for the project
 
-Create a .env.local file in the root folder and populate it with the following variables, Get Api a key from [Livepeer](https://livepeer.org/), [Push](https://push.org/) and Using the Unlock Dashboard, create a lock. After generating the lock, modify the configuration in components\JoinStream\index.js
+Create a `.env.local` file in the root folder and populate it with the following variables, Get Api a key from [Livepeer](https://livepeer.org/), [Push](https://push.org/) and Using the Unlock Dashboard, create a lock. After generating the lock, modify the configuration in `components\JoinStream\index.js`
 
 ```bash
 NEXT_PUBLIC_STUDIO_API_KEY=
@@ -111,5 +111,10 @@ npm run dev
 
 #### Project Start: Date: Nov 08, 2022 - Jan 8, 2023
 
-Happy Hacking 😊
+
+<h2 align="center">
+   <b>
+ Happy Hacking 😊
+    </b>
+</h2>
 
