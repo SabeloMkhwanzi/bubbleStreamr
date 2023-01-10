@@ -37,6 +37,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-dropzone": "^14.2.3",
+    "react-icons": "^4.7.1",
     "react-rotating-text": "^1.4.1",
     "styled-components": "^5.3.5",
     "unique-names-generator": "^4.7.1",

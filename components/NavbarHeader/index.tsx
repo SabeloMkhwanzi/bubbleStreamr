@@ -71,8 +71,8 @@ export default function NavbarHeader() {
   return (
     <Header
       bg="transparent"
+      sx={{ backdropFilter: "blur(5px)", borderBottom: 0 }}
       height={HEADER_HEIGHT}
-      sx={{ borderBottom: 0 }}
       mb={120}
     >
       <Container className={classes.inner} fluid>
@@ -85,7 +85,10 @@ export default function NavbarHeader() {
             href="/"
           >
             <Button variant="default" radius="md" className={classes.linkLabel}>
-              <Text className={petrona.className}> Home</Text>
+              <Text fw="500" fz="md" className={petrona.className}>
+                {" "}
+                Home
+              </Text>
             </Button>
           </Link>
 
@@ -94,7 +97,10 @@ export default function NavbarHeader() {
             href="/createStream"
           >
             <Button variant="default" radius="md" className={classes.linkLabel}>
-              <Text className={petrona.className}> Create Stream</Text>
+              <Text fw="500" fz="md" className={petrona.className}>
+                {" "}
+                Create Stream
+              </Text>
             </Button>
           </Link>
           <Link
@@ -102,7 +108,9 @@ export default function NavbarHeader() {
             href="/joinStream"
           >
             <Button variant="default" radius="md" className={classes.linkLabel}>
-              <Text className={petrona.className}>Join Stream</Text>
+              <Text fw="500" fz="md" className={petrona.className}>
+                Join Stream
+              </Text>
             </Button>
           </Link>
         </Group>
