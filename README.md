@@ -48,7 +48,7 @@ streaming and improve content monetization for creators in countless ways.
    
  #### Project Stack
 - Video Streaming SDK: [Livepeer](https://livepeer.org/) - The World's Open Video Infrastructure Livepeer is a decentralized video infrastructure network.
-- IN-app Notifications and Chat: [Push](https://push.org/) - Push Protocol is a web3 communication network, enabling cross-chain notifications and messaging for dapps, wallets, and services
+- In-app Notifications and Chat: [Push](https://push.org/) - Push Protocol is a web3 communication network, enabling cross-chain notifications and messaging for dapps, wallets, and services
 - Decentralised Name: [ENS](https://ens.domains/) - Decentralised naming for wallets, websites, & more.
 - pay-per-view paywall: [Unlock Protocol](https://unlock-protocol.com/) 
 - Building Framework: [Nextjs](https://nextjs.org/) -Next.js is an open-source web development framework created by Vercel enabling React-based web applications with server-side rendering and generating static websites
