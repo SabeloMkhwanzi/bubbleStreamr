@@ -68,6 +68,9 @@ streaming and improve content monetization for creators in countless ways.
 #### Project Showcase
 ![](https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/BubbleSteamr-Presentation3.gif)
 
+#### Responsive 
+![](https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/BubbleSteamr-Presentation-Responsive.gif)
+
 #### Roadmap for the Project
 - [ ] Subscriber badges for your fans.
 - [ ] Upload function to share video using decentralized protocol 
