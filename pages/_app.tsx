@@ -6,7 +6,6 @@ import {
   ColorScheme,
 } from "@mantine/core";
 import { NotificationsProvider } from "@mantine/notifications";
-//import WelcomeScreen from "../components/WelcomeScreen";
 
 // Rainbowkit wallet
 import "@rainbow-me/rainbowkit/styles.css";
@@ -50,7 +49,6 @@ const wagmiClient = createClient({
 });
 
 export default function App(props: AppProps) {
-  // Defining Color Mode
   const [colorScheme, setColorScheme] = useState<ColorScheme>("dark");
   const toggleColorScheme = (value?: ColorScheme) =>
     setColorScheme(value || (colorScheme === "dark" ? "light" : "dark"));

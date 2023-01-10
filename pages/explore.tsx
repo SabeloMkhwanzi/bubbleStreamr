@@ -1,15 +1,6 @@
 import Head from "next/head";
-import {
-  Footer,
-  NavbarHeader,
-  VideoMinter,
-  VideoUploader,
-} from "../components";
+import { Footer, NavbarHeader, VideoMinter } from "../components";
 import { AppShell, ScrollArea } from "@mantine/core";
-
-//import { Inter } from "@next/font/google";
-
-//const inter = Inter({ subsets: ["latin"] });
 
 export default function createStream() {
   return (
