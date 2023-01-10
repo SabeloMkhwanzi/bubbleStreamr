@@ -6,16 +6,16 @@
 
 <h1 align="center">
    <b>
-        <a href="https://bubble-streamr.vercel.app/"><img src="https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/bubblestreamr-logo2.png" /></a><br>
+        <a href="https://bubble-streamr.vercel.app/" target="_blank" ><img src="https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/bubblestreamr-logo2.png" /></a><br>
     </b>
 </h1>
 
 
 <p align="center">
-    <a href="https://bubble-streamr.vercel.app/"><b>Website</b></a> •
-    <a href="https://github.com/SabeloMkhwanzi"><b>Github</b></a> •
-    <a href="https://twitter.com/SabeloMkhwanaz"><b>Twitter</b></a> •
-    <a href="https://www.linkedin.com/in/sabelo-mkhwanazi-54ba431b1/"><b>LinkedIn</b></a> •
+    <a href="https://bubble-streamr.vercel.app/" target="_blank"><b>Website</b></a> •
+    <a href="https://github.com/SabeloMkhwanzi" target="_blank"><b>Github</b></a> •
+    <a href="https://twitter.com/SabeloMkhwanaz" target="_blank"><b>Twitter</b></a> •
+    <a href="https://www.linkedin.com/in/sabelo-mkhwanazi-54ba431b1/" target="_blank"><b>LinkedIn</b></a> •
     <a href="https://github.com/SabeloMkhwanzi/bubbleStreamr/edit/main/README.md"><b>Documentation</b></a>
 </p> 
 
