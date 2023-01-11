@@ -74,12 +74,7 @@ streaming and improve content monetization for creators in countless ways.
  
 ![](https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/BubbleSteamr-showcase2.gif)
 </h1>
-      
-#### Roadmap for the Project
-- [ ] Subscriber badges for your fans.
-- [ ] Upload function to share video using decentralized protocol 
-   
-   
+           
 #### Installing
 
 1. clone the repo with the following git command:
