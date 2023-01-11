@@ -113,7 +113,7 @@ npm run dev
 
 #### GitHub Repository: https://github.com/SabeloMkhwanzi/bubbleStreamr
 
-#### Demo video: [video](https://vimeo.com/788106467/44d02cabde)
+#### Demo video: [video](https://youtu.be/ELdf4c-cwEc)
 
 #### Project Start: Date: Nov 08, 2022 - Jan 8, 2023
 
