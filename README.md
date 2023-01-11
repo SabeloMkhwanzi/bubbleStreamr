@@ -10,7 +10,6 @@
     </b>
 </h1>
 
-
 <p align="center">
     <a href="https://bubble-streamr.vercel.app/" target="_blank"><b>Website</b></a> •
     <a href="https://github.com/SabeloMkhwanzi" target="_blank"><b>Github</b></a> •
@@ -18,7 +17,7 @@
     <a href="https://www.linkedin.com/in/sabelo-mkhwanazi-54ba431b1/" target="_blank"><b>LinkedIn</b></a> •
     <a href="https://github.com/SabeloMkhwanzi/bubbleStreamr/edit/main/README.md"><b>Documentation</b></a> •
     <a href="https://youtu.be/ELdf4c-cwEc"><b>Video</b></a>
-</p> 
+</p>
 
  <h3 align="center">
  BubbleStreamr - A decentralized social, content live streaming platform. 
@@ -27,18 +26,17 @@
 Engaging with your audience in real time. The platform allows you to host and stream your content, and a best way to monetization your brand.
 </p>
 
- 
 <h4>Intro:</h4>
 <p>
 Whereas YouTube other streaming platform are incredible in numerous cases, it may be a centralized benefit that comes with its claim bushel of joy for creators and viewers. For starters, all capacity for video content is stored on centralized servers; hence, creators and users eventually have no control over what happens to their content. The streaming platform decides what should be on its platform, not the users.
-</p>   
+</p>
 
 <h4>Our Mission:</h4>
 <p>
 Understanding the needs of content creators and their views, we handle to solve these issues directly by creating a better environment for users utilizing
 decentralization, open-source development, and transparent terms & conditions. Using Ethereum-based decentralized administrations to improve decentralized online
 streaming and improve content monetization for creators in countless ways.
-</p>    
+</p>
 
 <h4>Our Service:</h4>
 <li>Live streams with live chat so you can interact directly with your audience - <a href="https://livepeer.org">Livepeer</a></li> and <a href="https://push.org/">Push</a>
@@ -67,12 +65,14 @@ streaming and improve content monetization for creators in countless ways.
 <li>Additionally, we added PushChat, which enables users to communicate with one another on the platform by connecting their wallets and exchanging messages.</li>
 
 #### 1. Project Showcase
-![](https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/BubbleSteamr-Presentation3.gif)
 
-#### 2. Responsive 
+![](https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/BubbleSteamr-showcase1.gif)
+
+#### 2. Responsive
+
 <h1 align="center">
  
-![](https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/BubbleSteamr-Presentation-Responsive.gif)
+![](https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/BubbleSteamr-showcase2.gif)
 </h1>
       
 #### Roadmap for the Project
@@ -104,13 +104,11 @@ NEXT_PUBLIC_ALCHEMY_ID=
 NEXT_PUBLIC_PUSHCHAT_API_KEY=
 ```
 
-
 Finally, run the development server:
 
 ```bash
 npm run dev
 ```
-
 
 #### GitHub Repository: https://github.com/SabeloMkhwanzi/bubbleStreamr
 
@@ -118,10 +116,8 @@ npm run dev
 
 #### Project Start: Date: Nov 08, 2022 - Jan 8, 2023
 
-
 <h2 align="center">
    <b>
  Happy Hacking 😊
     </b>
 </h2>
-
