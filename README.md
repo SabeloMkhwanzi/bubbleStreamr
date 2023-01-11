@@ -16,7 +16,8 @@
     <a href="https://github.com/SabeloMkhwanzi" target="_blank"><b>Github</b></a> •
     <a href="https://twitter.com/SabeloMkhwanaz" target="_blank"><b>Twitter</b></a> •
     <a href="https://www.linkedin.com/in/sabelo-mkhwanazi-54ba431b1/" target="_blank"><b>LinkedIn</b></a> •
-    <a href="https://github.com/SabeloMkhwanzi/bubbleStreamr/edit/main/README.md"><b>Documentation</b></a>
+    <a href="https://github.com/SabeloMkhwanzi/bubbleStreamr/edit/main/README.md"><b>Documentation</b></a> •
+    <a href="https://youtu.be/ELdf4c-cwEc"><b>Video</b></a>
 </p> 
 
  <h3 align="center">
