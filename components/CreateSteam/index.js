@@ -73,7 +73,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-const PK = "dc2e4f6d8273ece57016aa2b17e115c6a70562e99989e3171f403ba4d499857b"; // channel private key
+const PK = process.env.NEXT_PUBLIC_APP_CHANNEL_PK; // channel private key
 const Pkey = `0x${PK}`;
 const signer = new ethers.Wallet(Pkey);
 
@@ -122,7 +122,7 @@ export default function CreateStream() {
       });
 
       // apiResponse?.status === 204, if sent successfully!
-      console.log("API repsonse: ", apiResponse);
+      console.log("API response: ", apiResponse);
     } catch (err) {
       console.error("Error: ", err);
     }
