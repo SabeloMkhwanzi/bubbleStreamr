@@ -97,6 +97,7 @@ Create a `.env.local` file in the root folder and populate it with the following
 NEXT_PUBLIC_STUDIO_API_KEY=
 NEXT_PUBLIC_ALCHEMY_ID=
 NEXT_PUBLIC_PUSHCHAT_API_KEY=
+NEXT_PUBLIC_APP_CHANNEL_PK=
 ```
 
 Finally, run the development server:
