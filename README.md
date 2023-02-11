@@ -20,7 +20,7 @@
 </p>
 
  <h3 align="center">
- BubbleStreamr - A decentralized social, content live streaming platform. 
+ BubbleStreamr - A platform for decentralized social content live streaming. 
 </h3>
 <p align="center">
 Engaging with your audience in real time. The platform allows you to host and stream your content, and a best way to monetization your brand.
