@@ -23,7 +23,7 @@
  BubbleStreamr - A platform for decentralized social content live streaming. 
 </h3>
 <p align="center">
-Engaging with your audience in real time. The platform allows you to host and stream your content, and a best way to monetization your brand.
+Real-time engagement with your audience. The platform allows you to publish and stream your content, as well as monetize it in the best way possible.
 </p>
 
 <h4>Intro:</h4>
