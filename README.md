@@ -70,10 +70,9 @@ Responsive                     |  Desktop
 ![](https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/BubbleSteamr-showcase2.gif)  |  ![](https://github.com/SabeloMkhwanzi/bubbleStreamr/blob/main/public/BubbleSteamr-showcase1.gif)
 
 ## Roadmap for the Project
-- [ ] NFT MINTING can be added to the app experience for creators to sell their content
-- [ ] Add Lens SDK to enables Creating a profile, followers. 
-- [ ] Configure a decentralized storage for user data storage. 
-           
+- [ ] Complete innovations and UI improvements
+- [ ] User profile creation, followers, tipping through a smart contract or payment SDK 
+            
 #### Installing
 
 1. clone the repo with the following git command:
