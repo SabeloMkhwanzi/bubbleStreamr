@@ -104,12 +104,6 @@ Finally, run the development server:
 npm run dev
 ```
 
-#### GitHub Repository: https://github.com/SabeloMkhwanzi/bubbleStreamr
-
-#### Demo video: [video](https://youtu.be/ELdf4c-cwEc)
-
-#### Project Start: Date: Nov 08, 2022 - Jan 8, 2023
-
 <h2 align="center">
    <b>
  Happy Hacking 😊
